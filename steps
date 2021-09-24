@@ -1,0 +1,11 @@
+1. create project using command -> npx create-react-app app-name --template cra-template-pwa
+2. create custom sw -> /src/custom-service-worker.js
+3. append build command in package.json with ->  && cat src/custom-service-worker.js >> build/service-worker.js
+4. create file -> src/subscribe-push.js (to subscrbe the push-notification and send subscription to the server.)
+5. call method -> subscribePushNotification() from anywhere you want (Currrent project App.js)
+6. setup vapidkey and base_url in .env file
+
+
+----------------client side done------------------
+
+let's check -> npm run build
